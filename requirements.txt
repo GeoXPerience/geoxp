@@ -5,3 +5,4 @@ geocoder==1.17.3
 ratelim==0.1.6
 requests==2.11.1
 six==1.10.0
+pep8==1.7.0
