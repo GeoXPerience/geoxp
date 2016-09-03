@@ -1,31 +1,28 @@
-"""
-CSV Handler.
-"""
+'''This module handles CSV files.'''
 import csv
 import sys
 
 
+def build_locations(csv_data):
+    '''This function builds a lists of location objects.'''
+    pass
+
+
 def read_csv(file_name):
-    """Open CSV file."""
+    '''This function reads a CSV file.'''
     with open(file_name, 'rb') as csv_file:
-        header = csv.Sniffer().has_header(csv_file.read(1024))
+        header = csv.Sniffer().has_header(csv_file.read(4096))
         csv_file.seek(0)
         csv_data = csv.reader(csv_file)
-
         if header:
             next(csv_data)
+        csv_as_list = [row for row in csv_data]
 
-        csv_dict = [row for row in csv_data]
-
-    return csv_dict
-
-
-def build_locations(csv_data):
-    print(csv_data)
+    return csv_as_list
 
 
 def main():
-    """Main."""
+    '''This is functions is for testing purposes.'''
     csv_data = read_csv(sys.argv[1])
     build_locations(csv_data)
 
