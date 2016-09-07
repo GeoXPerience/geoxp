@@ -19,6 +19,11 @@ class Location(object):
         Geocode = namedtuple('Geocode', 'lat, long')
         return Geocode(lat=g.latlng[0], long=g.latlng[1])
 
+    def write(self, csv_file):
+        address = '%s;%s;%s;%s;%s\n' % (self.street, self.number, self.zip,
+                                        self.geoloc.lat, self.geoloc.long)
+        csv_file.write(address)
+
     def __str__(self):
         return unicode(self).encode('utf-8')
 
