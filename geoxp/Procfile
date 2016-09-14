@@ -1,0 +1,1 @@
+web: gunicorn geoxp.wsgi:application

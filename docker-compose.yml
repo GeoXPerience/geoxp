@@ -1,13 +1,13 @@
 version: '2'
 services:
   # db:
-    # image: postgres
+  #   image: postgres
   web:
     build: .
-    command: python ./geoxp/manage.py runserver 0.0.0.0:8000
+    command: ./geoxp/start.sh
     volumes:
       - .:/code
-    ports:
-      - "8000:8000"
+    # ports:
+      # - "8000:8000"
     # depends_on:
-      # - db
+    #   - db
