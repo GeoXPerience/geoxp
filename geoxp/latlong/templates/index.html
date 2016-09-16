@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Landing Page - Start Bootstrap Theme</title>
+    <title>GeoXP - Mapas personalizados</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
@@ -46,12 +46,12 @@
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
-					<form action="{% url 'upload' %}" method="post" enctype="multipart/form-data">
-      						{% csrf_token %}
-						<a class="btn btn-default btn-lg">
-							{{form}}
-						</a>
-    					</form>
+					           <form action="{% url 'upload' %}" method="post" enctype="multipart/form-data">
+          						    {% csrf_token %}
+        						    <a class="btn btn-default btn-lg">
+        							{{form}}
+        						    </a>
+    					       </form>
                             </li>
                         </ul>
                     </div>

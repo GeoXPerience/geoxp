@@ -19,6 +19,7 @@ h5,
 h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    color: #505050;
 }
 
 .topnav {
@@ -35,8 +36,9 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/world-map.jpg) no-repeat center center;
+    background: url(../img/intro-bg.jpg) no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .intro-message {
