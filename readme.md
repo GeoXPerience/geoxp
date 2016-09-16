@@ -1,34 +1,35 @@
-You should have Python 2 installed as well as pip and virtualenv.
+# GeorefXP 2016
+
+## 1.0 Requirements
+ 
+1. Python 2.7 - See [https://www.python.org/]
+2. Pip 8.1.X - See [https://pypi.python.org/pypi/pip]
+3. Virtual env - See [https://virtualenv.pypa.io/en/stable/]
+
+## 2.0 Guide to install the dependencies
 
 
-If you do not have python installed, run the following command:
-
-$ brew -v update && brew -v install python
+1. To install pip use the following command: $ pip install -U setuptools virtualenv
 
 
-If you do not have virtualenv installed, run the following command:
+##3.0 Setting up the developer command
 
-$ pip install -U setuptools virtualenv
+Type:
+1. $ virtualenv .
+2. $ . bin/activate
+3. $ pip install -r requirements.txt
 
+#4.0 To run tests
 
-To build the development environment:
+To execute the battery of tests
 
-$ virtualenv .
-$ . bin/activate
-$ pip install -r requirements.txt
-
-
-You should also run the tests:
-
-$ ./mange test
-
+- $ ./manage test
 
 To check the tests coverage:
 
-$ coverage run --source='.' manage.py test [app]
+- $ coverage run --source='.' manage.py test [app]
 
+##5.0 For running the application
 
-To run the application use the following commands:
-
-$ cd geoxp/
-$ ./manage.py runserver
+1. $ cd geoxp/
+2. ./manage.py runserver
