@@ -1,4 +1,5 @@
 <html>
+  <link href="upload.css" rel="stylesheet" type="text/css">
   <head>
     <title> Faça o upload do arquivo CSV </title>
   </head>
@@ -6,7 +7,6 @@
     <form action="{% url 'upload' %}" method="post" enctype="multipart/form-data">
       {% csrf_token %}
       <p>{{form}}</p>
-      <p><input type="submit" value="Upload" /></p>
     </form>
   </body>
 </html>
