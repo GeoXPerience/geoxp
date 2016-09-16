@@ -85,6 +85,9 @@ bin/
 include/
 pip-selfcheck.json
 
+# System files
+.DS_Store
+
 # Spyder project settings
 .spyderproject
 
