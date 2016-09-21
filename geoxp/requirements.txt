@@ -7,4 +7,5 @@ ratelim==0.1.6
 requests==2.11.1
 six==1.10.0
 whitenoise==3.2.1
+codecov
 coverage
