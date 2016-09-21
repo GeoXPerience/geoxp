@@ -8,3 +8,7 @@ all_tests:
   when: on_success
   only:
     - develop
+
+test_coverage:
+  script:
+   - bash <(curl -s https://codecov.io/bash)
