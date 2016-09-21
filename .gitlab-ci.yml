@@ -11,4 +11,6 @@ all_tests:
 
 test_coverage:
   script:
+   - codecov --token=<68a4083b-012e-4f3f-bc91-f18bc6e9aec0>
+   - coverage run ./latlong/tests.py
    - bash <(curl -s https://codecov.io/bash)
