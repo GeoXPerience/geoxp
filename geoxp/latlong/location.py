@@ -1,5 +1,7 @@
+# coding:utf-8
 from collections import namedtuple
 import geocoder
+import sys
 
 
 class Location(object):
@@ -28,7 +30,7 @@ class Location(object):
         return unicode(self).encode('utf-8')
 
     def __unicode__(self):
-        return '%s, %s - %s (%s, %s)' % (self.street, self.number, self.zip,
+        return u'%s, %s - %s (%s, %s)' % (self.street, self.number, self.zip,
                                          self.geoloc.lat, self.geoloc.long)
 
     def __eq__(self, other):
@@ -39,3 +41,7 @@ class Location(object):
     def __ne__(self, other):
         """Define a non-equality test"""
         return not self.__eq__(other)
+
+
+reload(sys)  
+sys.setdefaultencoding('utf8')
