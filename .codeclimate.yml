@@ -12,8 +12,15 @@ engines:
     enabled: true
   duplication:
     enabled: true
+    config:
+      languages:
+      - python
+      - css
+      - javascript
   pep8:
     enabled: true
+    paths:
+    - "**.pyc"
   radon: 
     enabled: true
     config:
