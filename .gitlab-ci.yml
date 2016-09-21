@@ -1,0 +1,8 @@
+image: python:2-onbuild
+
+all_tests:
+  script:
+   - python2 ./geoxp/manage.py test -k
+  when: on_success
+  only:
+    - develop
