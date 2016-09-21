@@ -1,0 +1,33 @@
+engines:
+  rubocop:
+    enabled: true
+    #checks:
+    # Rubocop/Metrics/ClassLength:
+    #   enabled: false
+  golint:
+    enabled: true
+  eslint:
+    enabled: true
+  csslint:
+    enabled: true
+  duplication:
+    enabled: true
+  pep8:
+    enabled: true
+  radon: 
+    enabled: true
+    config:
+      languages:
+      - python
+      - css
+      - javascript
+ratings:
+  paths:
+  - geoxp/**
+  - "**.pyc"
+exclude_paths:
+- "**/font-awesome/"
+- "**/fonts/"
+- "**.pyc"
+- "**.go"
+- "**bootstrap**"
