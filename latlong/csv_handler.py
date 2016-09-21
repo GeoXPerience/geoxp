@@ -1,6 +1,5 @@
-'''This module handles CSV files.'''
+"""This module handles CSV files."""
 import csv
-import sys
 from location import Location
 
 
@@ -13,7 +12,7 @@ def geocode_uploaded_file(input_file, output_file):
 
 
 def main():
-    '''This is functions is for testing purposes.'''
+    """This is functions is for testing purposes."""
     with open('addresses.csv', 'rb') as input_file, open('output.csv', 'a') as output_file:
         geocode_uploaded_file(input_file, output_file)
 
