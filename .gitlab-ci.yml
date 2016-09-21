@@ -3,7 +3,7 @@ image: python:2-onbuild
 all_tests:
   script:
    - pip install -r ./geoxp/requirements.txt
-   - python2 ./geoxp/manage.py test -k
+   - python2 ./geoxp/manage.py test latlong.tests
   when: on_success
   only:
     - develop
