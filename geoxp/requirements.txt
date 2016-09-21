@@ -1,0 +1,9 @@
+click==6.6
+decorator==4.0.10
+Django==1.10
+geocoder==1.17.3
+gunicorn==19.6.0
+ratelim==0.1.6
+requests==2.11.1
+six==1.10.0
+whitenoise==3.2.1
