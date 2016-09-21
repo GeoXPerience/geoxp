@@ -5,8 +5,7 @@ all_tests:
    - cd ./geoxp/
    - pip install -r requirements.txt
    - python2 ./manage.py test latlong.tests
-   - codecov --token=68a4083b-012e-4f3f-bc91-f18bc6e9aec0
-   - coverage run ./latlong/tests.py
+   - export CODECOV_TOKEN=68a4083b-012e-4f3f-bc91-f18bc6e9aec0
    - bash <(curl -s https://codecov.io/bash)
   when: on_success
   only:
